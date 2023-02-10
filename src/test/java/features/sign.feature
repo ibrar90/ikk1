@@ -3,6 +3,7 @@ Feature: signup Feature
     Given users in TalentTek signup page
     And user enter FirstName: ibrahim
     And user enter last name : Khalil
+    And user enter valid unique email address
     And user enter valid password
     And user enter valid confirm password
     And select the DOB from drop down box
@@ -15,12 +16,48 @@ Feature: signup Feature
     Given users in TalentTek signup page
     And user keep empty the first Name box
     And user enter last name : Khalil
+    And user enter valid unique email address
     And user enter valid password
     And user enter valid confirm password
     And select the DOB from drop down box
     And click on male radio box from gender section
     And click on radio box in agree of terms and policy
     When user clicks on create my account
-    Then user should not able to create a account and msg "The First Name field is required"will pop up.
+    Then user should not able to create a account and msg "The First Name field is required" will pop up.
+
+  Scenario: users should not able to create a new account without Last Name
+    Given users in TalentTek signup page
+    And user enter First Name: Ibrahim
+    And user keep empty the last name box
+    And user enter valid unique email address
+    And user enter valid password
+    And user enter valid confirm password
+    And select the DOB from drop down box
+    And click on male radio box from gender section
+    And click on radio box in agree of terms and policy
+    When user clicks on create my account
+    Then user should not able to create a account and msg "The Last Name field is required" will pop up.
+
+  Scenario: users should not able to create a new account without password
+    Given users in TalentTek signup page
+    And user enter First Name: Ibrahim
+    And user keep empty the last name box
+    And user enter valid unique email address
+    And user enter no password
+    And user enter valid confirm password
+    And select the DOB from drop down box
+    And click on male radio box from gender section
+    And click on radio box in agree of terms and policy
+    When user clicks on create my account
+    Then user should not able to create a account and msg "The Password field is required and The Confirm Password field does not match the Password field. will pop up.
+
+
+
+
+
+
+
+
+
 
 
