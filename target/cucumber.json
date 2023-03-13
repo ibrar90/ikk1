@@ -1,0 +1,111 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-03-13T21:17:27.236Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9651187000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hook.beforeEachTest()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "users should be able to login with valid credentials",
+        "description": "",
+        "id": "login-feature;users-should-be-able-to-login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 160000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hook.afterEachTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 113708000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User in TalentTEK Homepage",
+            "match": {
+              "location": "stepDef.LoginSteps.userInTalentTEKHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 267886000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enter valid email address",
+            "match": {
+              "location": "stepDef.LoginSteps.userEnterValidEmailAddress()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 43114000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enter valid password",
+            "match": {
+              "location": "stepDef.LoginSteps.userEnterValidPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 496013000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks on log in button",
+            "match": {
+              "location": "stepDef.LoginSteps.userClicksOnLogInButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 146000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user should be able to successfully login",
+            "match": {
+              "location": "stepDef.LoginSteps.userShouldBeAbleToSuccessfullyLogin()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Login Feature",
+    "description": "",
+    "id": "login-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/login.feature",
+    "tags": []
+  }
+]

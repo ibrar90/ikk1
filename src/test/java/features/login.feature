@@ -1,10 +1,13 @@
 Feature: Login Feature
+
+
+@smoke
   Scenario: users should be able to login with valid credentials
-    Given users in TalentTek homepage
+    Given  User in TalentTEK Homepage
     And user enter valid email address
     And user enter valid password
-    When user clicks on log in button
-    Then user should be able to successfully login
+   When user clicks on log in button
+   Then user should be able to successfully login
 
 
   Scenario: User should not be able to login with valid email and invalid password

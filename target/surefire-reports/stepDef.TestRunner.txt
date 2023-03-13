@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: stepDef.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.51 s <<< FAILURE! - in stepDef.TestRunner
+stepDef.TestRunner.setUpClass  Time elapsed: 1.25 s  <<< FAILURE!
+io.cucumber.core.gherkin.FeatureParserException: 
+Failed to parse resource at: file:///Users/ibrahimkhalil/Documents/ikk1/src/test/java/features/login.feature
+(13:5): expected: #TagLine, #ScenarioLine, #Comment, #Empty, got 'Given User in TalentTEK Homepage'
+(14:5): expected: #TagLine, #ScenarioLine, #Comment, #Empty, got 'And User enter valid email address'
+(15:5): expected: #TagLine, #ScenarioLine, #Comment, #Empty, got 'And User enter invalid password'
+(16:5): expected: #TagLine, #ScenarioLine, #Comment, #Empty, got 'When User clicks on Log In button'
+(17:5): expected: #TagLine, #ScenarioLine, #Comment, #Empty, got 'Then User should be able to see " You have entered an incorrect email or student ID."'
+

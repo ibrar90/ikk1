@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.159 s <<< FAILURE! - in TestRunner
+TestRunner.setUpClass  Time elapsed: 0.912 s  <<< FAILURE!
+io.cucumber.core.gherkin.FeatureParserException: 
+Failed to parse resource at: file:///Users/ibrahimkhalil/Documents/ikk1/src/test/java/features/login.feature
+(6:5): expected: #TagLine, #ScenarioLine, #Comment, #Empty, got 'Given  User in TalentTEK Homepage'
+(7:5): expected: #TagLine, #ScenarioLine, #Comment, #Empty, got 'And user enter valid email address'
+(8:5): expected: #TagLine, #ScenarioLine, #Comment, #Empty, got 'And user enter valid password'
+(9:4): expected: #TagLine, #ScenarioLine, #Comment, #Empty, got 'When user clicks on log in button'
+(10:4): expected: #TagLine, #ScenarioLine, #Comment, #Empty, got 'Then user should be able to successfully login'
+
